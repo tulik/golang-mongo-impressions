@@ -1,5 +1,5 @@
 # Golang and MongoDB
-## Performance testing with tracking link impressions
+## Testing performacnce with tracking link impressions
 <br />
 To run this solution, clone repository and:<br />
 `$ export GOPATH=$HOME/path-to-this-project`<br />

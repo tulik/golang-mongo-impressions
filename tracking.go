@@ -15,7 +15,7 @@ type Impressions struct {
 	CampaignLink		CampaignLink
 	Timestamp 		time.Time
 }
-type 	CampaignPublisher struct {
+type CampaignPublisher struct {
 	ID        		bson.ObjectId `bson:"_id,omitempty"`
 	Value			string
 }
@@ -37,11 +37,12 @@ func main() {
 		c := session.DB("tracking").C("requests")
 		err = c.Insert(
 			&Impressions{IP: ctx.RemoteAddr(),
-				CampaignPublisher:
-					CampaignPublisher{
-						Value: ctx.Param("pid")},
+				CampaignPublisher: CampaignPublisher{
+					Value: ctx.Param("pid"),
+				},
 				CampaignLink: CampaignLink{
-					Value: ctx.Param("lid")},
+					Value: ctx.Param("lid"),
+				},
 				Timestamp: time.Now(),
 			})
 		if err != nil {

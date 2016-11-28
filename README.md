@@ -3,6 +3,8 @@
 <br />
 To run this solution, clone repository and:<br />
 `$ export GOPATH=$HOME/path-to-this-project`<br />
+`$ export PATH=$PATH:$GOROOT/bin`<br />
+`$ go get -d` <br />
 Then<br />
 `$ go run tracking.go`<br />
 <br />

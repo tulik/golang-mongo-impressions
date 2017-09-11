@@ -4,7 +4,7 @@
 To run this solution, clone repository and:
 ```
 $ export GOPATH=$HOME/path-to-this-project
-`$ export PATH=$PATH:$GOROOT/bin
+$ export PATH=$PATH:$GOROOT/bin
 $ go get -d
 ```
 Then
